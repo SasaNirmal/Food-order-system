@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+header {
+  background-color: rgb(255, 255, 255); 
+  padding: 10px 20px;
+  margin-left: 25%; 
+  width: 100%; 
+  text-align: center;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+header nav ul li a {
+  color: inherit;
+  text-decoration: none;
+  padding: 5px 10px;
+  display: block;
+}
+
+header nav ul li a:hover {
+  background-color: rgb(5, 173, 13); 
+}
+
+header nav ul li ul {
+  display: none;
+  position: absolute;
+  background-color: rgb(3, 138, 10); 
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+header nav ul li:hover ul {
+  display: block; 
+}
+
+header nav ul li ul li {
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li ul li a {
+  padding: 5px 10px;
+}
+
+.container {
+  position: relative;
+  text-align: left;
+  color: white;
+}
+.bottom-left {
+  position: absolute;
+  top: 30%;
+  color: black;
+  font-family: Bodoni MT Black,sans-serif;
+}
+.bottom-right {
+  position: absolute;
+  top: 85%;
+  color: black;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;  
+}
+
+.product {
+  width: 30%;
+  margin-right: 15px;
+  
+  padding: 10px;
+}  
+
+.product img {
+  width: 100%;
+  height: auto; 
+}
+
+.price {
+  color: rgb(0, 0, 0);
+  font-weight: bold;  
+}
+
+.info {
+  background-color: #f2f2f2; 
+  padding: 20px;
+  border: 1px solid #ddd; 
+}
+
+.button {
+  background-color: #04AA6D; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #04AA6D;
+}
+
+.button1:hover {
+  background-color: #04AA6D;
+  color: white;
+}
+
+
+footer {
+  background-color: rgb(23, 61, 23);
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    header nav {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    header nav ul {
+      margin-top: 10px;
+    }
+
+    header nav ul li {
+      display: block;
+      margin-right: 0;
+      margin-bottom: 5px;
+    }
+
+    .bottom-left,
+    .bottom-right {
+      position: static;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .products {
+      flex-direction: column;
+    }
+
+    .product {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+
+    .info {
+      width: 100%;
+    }
+
+    footer table {
+      width: 100%;
+    }
+  }
+
+</style>
+</head>
+<body>
+<header>
+  <nav>
+    <ul>
+      <li><img style="height: 75px;" class="logo" src="./logo.png"></li>
+      <li><a href="#">Home</a></li>
+      <li>
+        <a href="#">Order Online</a>
+        <ul>
+          <li><a href="#">Delivery</a></li>
+          <br>
+          <li><a href="#">Pick Up</a></li>
+        </ul>
+      </li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+  </nav>
+</header>
+<div class="container">
+  <br><br><br>
+  <img src="./360_F_272247623_GmzIc6nAHj7OAFlIRxVdiNkaRoGT3ZsA.jpg" width="100%" alt="Snow">
+  <div class="bottom-left" style="font-size: 90px;">Fresh & Healthy <br><a style="color: green;">VEGITABLES</a>
+    <div class="bottom-right" style="background-color: green; border-radius: 10px;padding: 5px;">
+      <input type="text" placeholder="Search" style="width: 50px; height: 1px; border: none; border-radius: 5px; padding: 6px;" />
+      <button type="submit" style="background-color: green; color: #000000; border: none; border-radius: 5px; padding: 5px;">Search</button>
+    </div>  
+    
+  </div>
+ 
+</div>
+
+
+
+<div style="display: flex;">
+  <div style="flex: 1; padding: 10px; border: 1px solid #ddd; border-radius: 5px; text-align: center;">
+    <div class="products">
+
+      <div class="product">
+        <img src="./310119--01--1555692320.jpeg"> 
+        <div class="price">
+          <p style="background-color:green; padding: 10px; border-radius: 10px; text-align: center;">RS. 349.00 - 1kg
+        </div>
+      </div>
+    
+      <div class="product">
+        <img src="./beetroot-new-600x528.jpg">
+        <div class="price">
+          <p style="background-color:green; padding: 10px; border-radius: 10px; text-align: center;">RS. 463.00 - 1kg
+        </div>
+      </div>  
+    
+      <div class="product">
+        <img src="./556--1584341288.jpg">
+        <div class="price">
+          <p style="background-color:green; padding: 10px; border-radius: 10px; text-align: center;">RS. 329.00 - 1kg 
+        </div>
+      </div>
+      <div class="product">
+        <img src="./red-tomato-25-gm-500-gm.jfif">
+        <div class="price">
+          <p style="background-color:green; padding: 10px; border-radius: 10px; text-align: center;">RS. 329.00 - 1kg 
+        </div>
+      </div>
+
+      <div class="product">
+        <img src="./Pumpkin-sliced-open-f2b8dde.jpg">
+        <div class="price">
+          <p style="background-color:green; padding: 10px; border-radius: 10px; text-align: center;">RS. 329.00 - 1kg 
+        </div>
+      </div>
+      <div class="product">
+        <img src="./download.jfif">
+        <div class="price">
+          <p style="background-color:rgb(53, 128, 0); padding: 10px; border-radius: 10px; text-align: center;">RS. 329.00 - 1kg 
+        </div>
+      </div>
+    
+    </div>
+    </div>
+  <div style="flex: 1; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+    <p  style="background-color:rgb(203, 233, 181); width: 50%; height: 80%; padding: 10px; border-radius: 10px; text-align: left; font-size: 30px;">
+        Fruits and vegetables contain
+      important vitamins, minerals and
+      plant chemicals. They also
+      contain fiber.<br>
+      There are many varieties of fruit
+      and vegetables available and
+      many ways to prepare, cook and
+      serve them.
+      <br>
+      A diet high in fruit and vegetables
+      can help protect you against
+      cancer, diabetes and heart
+      disease.
+      <br>Eat 5 kinds of vegetable and 2
+      kinds of fruit every day for good
+      health.
+      <br>Most Australians do not eat
+      enough fruit and vegetables.
+      <br>When buying and serving fruit
+      and vegetables, aim for variety to
+      get the most nutrients and
+      appeal.<br>
+      <button class="button button1"><a href="https://www.keellssuper.com/home">More</a></button>
+      <img src="./veg.png" style="padding-left: 300px;" height="200px">
+      </p>
+
+
+    </div>
+</div>
+
+
+
+<footer>
+<table>
+  <tr>
+  <td>
+      <p style="text-align: left;">Jaykay Marketing Services Pvt Ltd.<br>
+        No:148, Vauxhall Street, Colombo 2,<br>
+        Sri Lanka.<br>
+        <p>Phone: <a href="tel:+94-23456789">+123 456 789</a></p>
+        Daily operating hours 8.00a.m to 8.00p.m<br>
+      </p>
+  </td>
+  <td>
+    <img style="margin-left: 800px;" src="./logo.png">
+  </td>
+</tr>
+</table>
+</footer>
+
+
+</body>
+</html>
