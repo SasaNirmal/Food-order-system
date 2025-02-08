@@ -1,6 +1,6 @@
-# Food Order System
+# SwiftEats
 
-**Food Order System** is a modern web application designed to manage food orders in restaurants, enabling a seamless experience for customers and administrators. 🍔🍕 The app allows users to browse menus, place orders, and track deliveries, while admins can manage the menu, process orders, and monitor delivery statuses. 🚚📊
+**SwiftEats** is a modern web application designed to manage food orders in restaurants, enabling a seamless experience for customers and administrators. 🍔🍕 The app allows users to browse menus, place orders, and track deliveries, while admins can manage the menu, process orders, and monitor delivery statuses. 🚚📊
 
 ## Features
 
